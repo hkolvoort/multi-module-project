@@ -22,7 +22,7 @@
   ],
   "branchPrefix": "feature/",
   "schedule": [
-    "daily"
+    "every day"
   ],
   "automerge": false
 }
