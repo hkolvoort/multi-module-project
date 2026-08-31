@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "schedule:daily"
   ],
   "dependencyDashboard": true,
   "packageRules": [
@@ -21,8 +22,5 @@
     }
   ],
   "branchPrefix": "feature/",
-  "schedule": [
-    "every day"
-  ],
   "automerge": false
 }
