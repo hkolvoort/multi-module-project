@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended"
+  ],
+  "dependencyDashboard": true,
+  "packageRules": [
+    {
+      "matchManagers": [
+        "maven"
+      ],
+      "groupName": "All Maven Dependencies",
+      "matchPackageNames": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "branchName": "{{branchPrefix}}LCM-all-minor-dependencies"
+    }
+  ],
+  "branchPrefix": "feature/",
+  "schedule": [
+    "daily"
+  ],
+  automerge: false
+}
