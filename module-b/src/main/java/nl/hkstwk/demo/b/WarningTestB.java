@@ -1,7 +1,9 @@
 package nl.hkstwk.demo.b;
 
+import java.util.List;
+
 public class WarningTestB {
-    public void test() {
-        int x; // unused variable → Xlint:none geeft geen warning
+    void countElements(List l) {
+        String s = (String) "Hello!";
     }
 }

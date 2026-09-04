@@ -1,5 +1,6 @@
 package nl.hkstwk.demo.a;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -7,9 +8,16 @@ import static org.assertj.core.api.Assertions.assertThat;
 class GreetingServiceATest {
 
     @Test
-    void greeting() {
+    @DisplayName("Zou begroetingsbericht moeten geven als naam is opgegeven")
+    void should_returnGreetingMessage_when_nameProvided() {
+        // given
         GreetingServiceA greetingServiceA = new GreetingServiceA();
+        String expected = "Hello harm from module A!";
+
+        // when
         String result = greetingServiceA.greeting("harm");
-        assertThat("Hello harm from module A!").isEqualTo(result);
+
+        // then
+        assertThat(result).isEqualTo(expected);
     }
 }

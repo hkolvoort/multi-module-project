@@ -40,11 +40,17 @@
             <scope>test</scope>
         </dependency>
 
-        <!--        <dependency>-->
-        <!--            <groupId>commons-logging</groupId>-->
-        <!--            <artifactId>commons-logging</artifactId>-->
-        <!--            <version>1.2</version>-->
-        <!--        </dependency>-->
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-junit-jupiter</artifactId>
+            <scope>test</scope>
+        </dependency>
 
     </dependencies>
 
@@ -55,7 +61,7 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <compilerArgs>
-                        <arg>-Xlint:none</arg>
+                        <arg>-Xlint:all,-rawtypes</arg>
                     </compilerArgs>
                 </configuration>
             </plugin>
