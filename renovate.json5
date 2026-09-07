@@ -17,10 +17,10 @@
       "matchUpdateTypes": [
         "minor",
         "patch"
-      ],
-      "branchName": "{{branchPrefix}}LCM-all-minor-dependencies"
+      ]
     }
   ],
   "branchPrefix": "feature/",
+  "additionalBranchPrefix": "LCM-all-minor-dependencies",
   "automerge": false
 }

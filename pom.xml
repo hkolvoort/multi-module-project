@@ -40,6 +40,14 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-dependencies</artifactId>
+                <type>pom</type>
+                <version>4.1.1</version>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
                 <groupId>org.junit.jupiter</groupId>
                 <artifactId>junit-jupiter</artifactId>
                 <version>6.1.3</version>
@@ -164,7 +172,6 @@
                                 <dependencyConvergence/>
                                 <bannedDependencies>
                                     <excludes>
-                                        <exclude>commons-logging:commons-logging</exclude>
                                         <exclude>log4j:log4j</exclude>
                                     </excludes>
                                     <searchTransitive>true</searchTransitive>
